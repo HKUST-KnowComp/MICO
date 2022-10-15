@@ -1,5 +1,5 @@
 # MICO
-This is the code repo for EMNLP2022 MICO: multiview contrastive learning framework for commonsense knowledge representation
+This is the code repo for EMNLP2022 MICO: a multi-alternative contrastive learning framework for commonsense knowledge representation
 
 ## Data Preparation
 
