@@ -12,8 +12,8 @@ from torch.utils.data import DataLoader
 from util import load_tokenizer, AverageMeter, accuracy
 
 from model import LModel
-from loss_cs_ori import EvalLoss
-from dataset_roberta_ori import *
+from loss_cs import EvalLoss
+from dataset import *
 import pickle
 
 
@@ -58,7 +58,7 @@ def eval(eval_loader, model, tokenizer, criterion, opt):
 
             features = []
             anchor_ids = tokenizer(anchor, padding=True, truncation=True, max_length=opt.max_seq_length, return_tensors='pt')
-            pos_ids = tokenizer(pos, padding=True, truncation=True, max_length=opt.max_seq_length, return_tensors='pt')
+            pos_ids = tokenizer(pos[0], padding=True, truncation=True, max_length=opt.max_seq_length, return_tensors='pt')
 
             if torch.cuda.is_available():
                 anchor_ids = {k: v.cuda() for k, v in anchor_ids.items()}
