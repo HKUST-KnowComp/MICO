@@ -70,7 +70,7 @@ This is the code repo for EMNLP2022 MICO: a multi-alternative contrastive learni
        --testfile ../dataset/SIQA/socialiqa-train-dev/dev.jsonl \
        --testlabel ../dataset/SIQA/socialiqa-train-dev/dev-labels.lst
    ```
-   More evaluation refers to `eval.sh`.
+   More evaluation refers to `eval.sh`. [Trained models](https://drive.google.com/file/d/1nzQzD8wb_01QJ30_dYuJW1p_0Wep34i7/view?usp=share_link) with RoBERTa-large and `k=2` can be downloaded. 
 
 ## Evaluation for Inductive CSKG Completion
 
